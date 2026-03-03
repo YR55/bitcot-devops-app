@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="container mt-5">
     <div class="card p-4 shadow">
-        <h3 class="mb-4">Bitcot DevOps Test App</h3>
+        <h3 class="mb-4">Bitcot DevOps Test App - AUTO DEPLOY</h3>
 
         <form method="POST">
             <input type="text" name="name" class="form-control mb-3" placeholder="Enter Name" required>
