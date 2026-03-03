@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  php-app:
+    build: .
+    container_name: bitcot-php
+    ports:
+      - "80:80"
