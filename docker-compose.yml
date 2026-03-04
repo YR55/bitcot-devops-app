@@ -2,7 +2,15 @@ version: '3.8'
 
 services:
   php-app:
-    build: .
+    image: 201186892936.dkr.ecr.us-east-1.amazonaws.com/bitcot-devops-app:latest
     container_name: bitcot-php
+    restart: always
+
     ports:
-      - "80:80"
+      - "8081:80"
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
