@@ -1,8 +1,8 @@
 <?php
-$host = "bitcot-db.c6fmciaoqc63.us-east-1.rds.amazonaws.com";
-$user = "admin";
-$pass = "Bitcot55";
-$db   = "bitcotdb";
+$host = "";
+$user = "";
+$pass = "";
+$db   = "";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
